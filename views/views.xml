@@ -6,6 +6,7 @@
 
   <record model="ir.actions.act_window" id="action_list_ideas">
       <field name="name">Course Ideas</field>
+      <!-- The res-model name is comming from models/model.py -->
       <field name="res_model">openacademy.openacademy</field>
       <field name="view_mode">tree,form</field>
   </record>
