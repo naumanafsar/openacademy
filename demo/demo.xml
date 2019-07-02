@@ -1,0 +1,17 @@
+<odoo>
+    <record model="ir.module.module" id="course">
+    <field name="name"> Course 0 </field>
+    <field name="desciption"> Course description
+    can have multiple lines </field>
+
+    </record>
+
+    <record model="ir.module.module" id="course1">
+    <field name="name"> Course 1 </field>
+    </record>
+
+     <record model="ir.module.module" id="course2">
+            <field name="name">Course 2</field>
+            <field name="description">Course 2's description</field>
+        </record>
+</odoo>
