@@ -7,11 +7,14 @@ class Course(models.Model):
     _name = 'openacademy.openacademy'
 
     name = fields.Char(string="Title", required=True)
+    start_date = fields.Date()
+    duration = fields.Float(digits=(6,2), help="Duration in days")
     description = fields.Text()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
+    seats = fields.Integer(string="Number of Seats")
 
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+    responsible_id = fields.Many2one('res.users',
+        ondelete='set null', string="Responsible", index=True)
+
+
+class Session(models.Model):
+    _name = 'openacademy.session'

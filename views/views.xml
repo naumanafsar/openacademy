@@ -10,6 +10,9 @@
       <field name="res_model">openacademy.openacademy</field>
       <field name="view_mode">tree,form</field>
   </record>
-<menuitem id="menu_action_list_ideas" name="Course Ideas" sequence="10"
-          action="action_list_ideas"/>
+  <menuitem id="menu_action_list_ideas" name="Course Ideas" sequence="10"
+            action="action_list_ideas"/>
+
+ 
+
 </odoo>
